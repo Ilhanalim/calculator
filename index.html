@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/27669a49ad.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <h1 class="title">Calculator</h1>
+
+    <div class="container">
+        <div class="screen">
+            <div class="d-flex">
+                <span class="placeholder">insert a number</span>
+                <p class="calculation"></p>
+                <p class="calcHide d-none"></p>
+                <p class="result"></p>
+            </div>
+        </div>
+
+        <div class="row-1 m-auto">
+            <div class="box clear icon operation"><i class="uil uil-calculator clear"></i></div>
+            <div class="box delete icon operation"><i class="uil uil-backspace delete"></i></div>
+            <div class="box percentage icon operation"><i class="uil uil-percentage percentage"></i></div>
+            <div class="box divide icon number operation" data-val="÷" data-val-hide="/"><i
+                    class="fas fa-divide number operation" data-val="÷" data-val-hide="/"></i>
+            </div>
+        </div>
+
+        <div class="row-2">
+            <div class="box seven icon number" data-val="7" data-val-hide="7">7</div>
+            <div class="box eight icon number" data-val="8" data-val-hide="8">8</div>
+            <div class="box nine icon number" data-val="9" data-val-hide="9">9</div>
+            <div class="box multiply icon number operation" data-val="x" data-val-hide="*"><i
+                    class="uil uil-multiply number operation" data-val="x" data-val-hide="*"></i>
+            </div>
+        </div>
+
+        <div class="row-3">
+            <div class="box four icon number" data-val="4" data-val-hide="4">4</div>
+            <div class="box five icon number" data-val="5" data-val-hide="5">5</div>
+            <div class="box six icon number" data-val="6" data-val-hide="6">6</div>
+            <div class="box minus icon operation number" data-val="-" data-val-hide="-"><i
+                    class="uil uil-minus number operation" data-val="-" data-val-hide="-"></i>
+            </div>
+        </div>
+
+        <div class="row-4">
+            <div class="box one icon number" data-val="1" data-val-hide="1">1</div>
+            <div class="box two icon number" data-val="2" data-val-hide="2">2</div>
+            <div class="box three icon number" data-val="3" data-val-hide="3">3</div>
+            <div class="box plus icon operation number" data-val="+" data-val-hide="+"><i
+                    class="uil uil-plus number operation" data-val="+" data-val-hide="+"></i>
+            </div>
+        </div>
+
+        <div class="row-5">
+            <div class="box blank icon operation"><i class="uil uil-repeat"></i></div>
+            <div class="box zero icon number" data-val="0" data-val-hide="0">0</div>
+            <div class="box dot icon number" data-val="." data-val-hide=".">.</div>
+            <div class="box equal icon operation"><i class="uil uil-equal-circle equal operation"></i></div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
